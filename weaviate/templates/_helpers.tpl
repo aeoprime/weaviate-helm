@@ -69,9 +69,9 @@
 {{/* 
 Return Image pull secret Names
 Usage:
-{{- include "image.pullSecrets" (dict "pullSecrets" path_to_image_pullSecrets) | nindent 6 }}
+{{- include "image.pull.secrets" (dict "pullSecrets" path_to_image_pullSecrets) | nindent 6 }}
 */}}
-{{- define "image.pullSecrets" -}}
+{{- define "image.pull.secrets" -}}
   {{- $pullSecrets := list -}}
 
   {{- if .pullSecrets -}}

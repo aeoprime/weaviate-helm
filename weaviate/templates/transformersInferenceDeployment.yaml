@@ -23,7 +23,7 @@ spec:
       {{- else if (index .Values "serviceAccountName") }}
       serviceAccountName: {{ index .Values "serviceAccountName" }}
       {{- end }}
-      {{- include "image.pullSecrets" (dict "pullSecrets" (index .Values "modules" "text2vec-transformers" "imagePullSecrets")) | nindent 6 }}
+      {{- include "image.pull.secrets" (dict "pullSecrets" (index .Values "modules" "text2vec-transformers" "imagePullSecrets")) | nindent 6 }}
       {{- include "pod.priorityClassName" ( dict "global" $.Values.globalPriorityClassName "priorityClassName" (index .Values "modules" "text2vec-transformers" "priorityClassName")) | nindent 6 }}
       containers:
       - name: {{ index .Values "modules" "text2vec-transformers" "fullnameOverride" }}
@@ -98,7 +98,7 @@ spec:
       {{- else if (index .Values "serviceAccountName") }}
       serviceAccountName: {{ index .Values "serviceAccountName" }}
       {{- end }}
-      {{- include "image.pullSecrets" (dict "pullSecrets" (index .Values "modules" "text2vec-transformers" "passageQueryServices" "passage" "imagePullSecrets")) | nindent 6 }}
+      {{- include "image.pull.secrets" (dict "pullSecrets" (index .Values "modules" "text2vec-transformers" "passageQueryServices" "passage" "imagePullSecrets")) | nindent 6 }}
       {{- include "pod.priorityClassName" ( dict "global" $.Values.globalPriorityClassName "priorityClassName" (index .Values "modules" "text2vec-transformers" "passageQueryServices" "passage" "priorityClassName")) | nindent 6 }}
       containers:
       - name: {{ index .Values "modules" "text2vec-transformers" "passageQueryServices" "passage" "fullnameOverride" }}
@@ -166,7 +166,7 @@ spec:
       {{- else if (index .Values "serviceAccountName") }}
       serviceAccountName: {{ index .Values "serviceAccountName" }}
       {{- end }}
-      {{- include "image.pullSecrets" (dict "pullSecrets" (index .Values "modules" "text2vec-transformers" "passageQueryServices" "query" "imagePullSecrets")) | nindent 6 }}
+      {{- include "image.pull.secrets" (dict "pullSecrets" (index .Values "modules" "text2vec-transformers" "passageQueryServices" "query" "imagePullSecrets")) | nindent 6 }}
       {{- include "pod.priorityClassName" ( dict "global" $.Values.globalPriorityClassName "priorityClassName" (index .Values "modules" "text2vec-transformers" "passageQueryServices" "query" "priorityClassName")) | nindent 6 }}
       containers:
       - name: {{ index .Values "modules" "text2vec-transformers" "passageQueryServices" "query" "fullnameOverride" }}
