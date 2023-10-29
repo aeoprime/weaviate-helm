@@ -24,6 +24,7 @@ spec:
       serviceAccountName: {{ index .Values "serviceAccountName" }}
       {{- end }}
       {{- include "image.pullSecrets" (dict "pullSecrets" (index .Values "modules" "qna-transformers" "imagePullSecrets")) | nindent 6 }}
+      {{- include "pod.priorityClassName" ( dict "global" $.Values.globalPriorityClassName "priorityClassName" (index .Values "modules" "qna-transformers" "priorityClassName")) | nindent 6 }}
       containers:
       - name: {{ index .Values "modules" "qna-transformers" "fullnameOverride" }}
         image: {{ index .Values "modules" "qna-transformers" "registry" }}/{{ index .Values "modules" "qna-transformers" "repo" }}:{{ index .Values "modules" "qna-transformers" "tag" }}

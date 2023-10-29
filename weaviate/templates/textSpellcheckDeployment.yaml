@@ -24,6 +24,7 @@ spec:
       serviceAccountName: {{ index .Values "serviceAccountName" }}
       {{- end }}
       {{- include "image.pullSecrets" (dict "pullSecrets" (index .Values "modules" "text-spellcheck" "imagePullSecrets")) | nindent 6 }}
+      {{- include "pod.priorityClassName" ( dict "global" $.Values.globalPriorityClassName "priorityClassName" (index .Values "modules" "text-spellcheck" "priorityClassName")) | nindent 6 }}
       containers:
       - name: {{ index .Values "modules" "text-spellcheck" "fullnameOverride" }}
         image: {{ index .Values "modules" "text-spellcheck" "registry" }}/{{ index .Values "modules" "text-spellcheck" "repo" }}:{{ index .Values "modules" "text-spellcheck" "tag" }}

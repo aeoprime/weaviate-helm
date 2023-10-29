@@ -295,6 +295,7 @@ modules:
     registry: docker.io
     replicas: 1
     imagePullSecrets: []
+    priorityClassName: ""
     envconfig:
       occurrence_weight_linear_factor: 0.75
       neighbor_occurrence_ignore_percentile: 5
@@ -345,6 +346,7 @@ modules:
     registry: docker.io
     replicas: 1
     imagePullSecrets: []
+    priorityClassName: ""
     fullnameOverride: transformers-inference
     # Deprecated setting use initialDelaySeconds instead in each probe instead
     # probeInitialDelaySeconds: 120
@@ -407,6 +409,7 @@ modules:
         repo: semitechnologies/transformers-inference
         registry: docker.io
         imagePullSecrets: []
+        priorityClassName: ""
         replicas: 1
         fullnameOverride: transformers-inference-passage
         livenessProbe:
@@ -461,6 +464,7 @@ modules:
         repo: semitechnologies/transformers-inference
         registry: docker.io
         imagePullSecrets: []
+        priorityClassName: ""
         replicas: 1
         fullnameOverride: transformers-inference-query
         livenessProbe:
@@ -574,6 +578,7 @@ modules:
     registry: docker.io
     replicas: 1
     imagePullSecrets: []
+    priorityClassName: ""
     fullnameOverride: clip-inference
     livenessProbe:
       initialDelaySeconds: 120
@@ -623,6 +628,7 @@ modules:
     registry: docker.io
     replicas: 1
     imagePullSecrets: []
+    priorityClassName: ""
     fullnameOverride: qna-transformers
     livenessProbe:
       initialDelaySeconds: 120
@@ -710,6 +716,7 @@ modules:
     registry: docker.io
     replicas: 1
     imagePullSecrets: []
+    priorityClassName: ""
     fullnameOverride: img2vec-neural
     livenessProbe:
       initialDelaySeconds: 120
@@ -771,6 +778,7 @@ modules:
     registry: docker.io
     replicas: 1
     imagePullSecrets: []
+    priorityClassName: ""
     fullnameOverride: text-spellcheck
     livenessProbe:
       initialDelaySeconds: 120
@@ -815,6 +823,7 @@ modules:
     registry: docker.io
     replicas: 1
     imagePullSecrets: []
+    priorityClassName: ""
     fullnameOverride: ner-transformers
     livenessProbe:
       initialDelaySeconds: 120
@@ -875,6 +884,7 @@ modules:
     registry: docker.io
     replicas: 1
     imagePullSecrets: []
+    priorityClassName: ""
     fullnameOverride: sum-transformers
     livenessProbe:
       initialDelaySeconds: 120
@@ -956,3 +966,9 @@ affinity:
                 operator: In
                 values:
                   - weaviate
+
+## Optionally specify priorityClass name for the pod
+## ref: https://kubernetes.io/docs/concepts/scheduling-eviction/pod-priority-preemption/#pod-priority
+##
+priorityClassName: ""
+globalPriorityClassName: ""

@@ -31,6 +31,7 @@ spec:
       {{- end }}
       terminationGracePeriodSeconds: {{ .Values.terminationGracePeriodSeconds }}
       {{- include "image.pullSecrets" (dict "pullSecrets" $.Values.image.pullSecrets) | nindent 6 }}
+      {{- include "pod.priorityClassName" ( dict "global" $.Values.globalPriorityClassName "priorityClassName" $.Values.priorityClassName) | nindent 6 }}
       containers:
       - name: weaviate
         image: '{{ .Values.image.registry }}/{{ .Values.image.repo }}:{{ .Values.image.tag }}'

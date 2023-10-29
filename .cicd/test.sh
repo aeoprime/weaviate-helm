@@ -170,11 +170,15 @@ function check_creates_template() {
   done
 
   check_setting_has_value "--set image.pullSecrets[0]=weaviate-image-pull-secret" "imagePullSecrets" "name: weaviate-image-pull-secret"
+  check_string_existence "--set priorityClassName=critical" "priorityClassName: critical"
+  check_string_existence "--set globalPriorityClassName=high" "priorityClassName: high"
   
   MODULES=("text2vec-contextionary" "text2vec-transformers" "multi2vec-clip" "qna-transformers" "img2vec-neural" "text-spellcheck" "ner-transformers" "sum-transformers")
   for mod in "${MODULES[@]}"
   do
   check_setting_has_value "--set modules.$mod.enabled=true --set modules.$mod.imagePullSecrets[0]=weaviate-image-pull-secret" "imagePullSecrets" "name: weaviate-image-pull-secret"
+  check_string_existence "--set modules.$mod.enabled=true --set modules.$mod.priorityClassName=$mod" "priorityClassName: $mod"
+  check_string_existence "--set modules.$mod.enabled=true --set globalPriorityClassName=high" "priorityClassName: high"
   done
 
   echo "Tests successful."
