@@ -75,6 +75,18 @@ entries:
     version: 16.2.0
   - apiVersion: v2
     appVersion: 1.18.0
+    created: "2023-10-30T10:03:34.544959+01:00"
+    description: A Helm Chart to run Weaviate with all dependencies
+    digest: f7024914df728b07544d1640f0e24d1b58d14e7adbaa39c114d362b731a1f565
+    home: https://github.com/weaviate/weaviate
+    icon: https://raw.githubusercontent.com/weaviate/weaviate/19de0956c69b66c5552447e84d016f4fe29d12c9/docs/assets/weaviate-logo.png
+    name: weaviate
+    type: application
+    urls:
+    - https://cog-weaviate.github.io/weaviate-helm/weaviate-16.1.1.tgz
+    version: 16.1.1
+  - apiVersion: v2
+    appVersion: 1.18.0
     created: "2023-04-24T05:40:33.820961423Z"
     description: A Helm Chart to run Weaviate with all dependencies
     digest: 183b8dff0ba52333a7666a4399a1ea4c824d7bc14ee171edd77f7c5e4f1191b1
@@ -85,18 +97,6 @@ entries:
     urls:
     - https://cog-weaviate.github.io/weaviate-helm/weaviate-16.1.0.tgz
     version: 16.1.0
-  - apiVersion: v2
-    appVersion: 1.18.0
-    created: "2023-10-30T09:29:53.817577+01:00"
-    description: A Helm Chart to run Weaviate with all dependencies
-    digest: 46a1ccf19eaf016df7de57b87996f7dcf3ac3c9e0c68e588cff7001b83c39b20
-    home: https://github.com/weaviate/weaviate
-    icon: https://raw.githubusercontent.com/weaviate/weaviate/19de0956c69b66c5552447e84d016f4fe29d12c9/docs/assets/weaviate-logo.png
-    name: weaviate
-    type: application
-    urls:
-    - https://cog-weaviate.github.io/weaviate-helm/weaviate-16.1.0-cog.tgz
-    version: 16.1.0-cog
   - apiVersion: v2
     appVersion: 1.18.0
     created: "2023-03-07T15:07:44.924697558Z"
@@ -229,4 +229,4 @@ entries:
     urls:
     - https://cog-weaviate.github.io/weaviate-helm/weaviate-14.4.0.tgz
     version: 14.4.0
-generated: "2023-10-30T09:29:53.815802+01:00"
+generated: "2023-10-30T10:03:34.520733+01:00"
