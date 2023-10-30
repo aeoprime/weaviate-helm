@@ -64,7 +64,7 @@ $ helm --namespace weaviate uninstall weaviate
 | Chart Version | Weaviate Version | Date |
 |---------------|-------------|------|
 {% for chart in all_charts -%}
-{% unless chart.version contains "-" -%}
+{% unless chart.version contains "alpha" -%}
 | [{{ chart.version }}]({{ chart.urls[0] }}) | {{ chart.appVersion }} | {{ chart.created | date_to_rfc822 }} | 
 {% endunless -%}
 {% endfor -%}
