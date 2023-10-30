@@ -11,7 +11,7 @@ entries:
     name: weaviate
     type: application
     urls:
-    - https://weaviate.github.io/weaviate-helm/weaviate-16.6.0.tgz
+    - https://cog-weaviate.github.io/weaviate-helm/weaviate-16.6.0.tgz
     version: 16.6.0
   - apiVersion: v2
     appVersion: 1.21.0
@@ -23,7 +23,7 @@ entries:
     name: weaviate
     type: application
     urls:
-    - https://weaviate.github.io/weaviate-helm/weaviate-16.5.0.tgz
+    - https://cog-weaviate.github.io/weaviate-helm/weaviate-16.5.0.tgz
     version: 16.5.0
   - apiVersion: v2
     appVersion: 1.20.0
@@ -35,7 +35,7 @@ entries:
     name: weaviate
     type: application
     urls:
-    - https://weaviate.github.io/weaviate-helm/weaviate-16.4.0.tgz
+    - https://cog-weaviate.github.io/weaviate-helm/weaviate-16.4.0.tgz
     version: 16.4.0
   - apiVersion: v2
     appVersion: 1.19.8
@@ -47,7 +47,7 @@ entries:
     name: weaviate
     type: application
     urls:
-    - https://weaviate.github.io/weaviate-helm/weaviate-16.3.1.tgz
+    - https://cog-weaviate.github.io/weaviate-helm/weaviate-16.3.1.tgz
     version: 16.3.1
   - apiVersion: v2
     appVersion: 1.19.1
@@ -59,7 +59,7 @@ entries:
     name: weaviate
     type: application
     urls:
-    - https://weaviate.github.io/weaviate-helm/weaviate-16.3.0.tgz
+    - https://cog-weaviate.github.io/weaviate-helm/weaviate-16.3.0.tgz
     version: 16.3.0
   - apiVersion: v2
     appVersion: 1.19.0
@@ -71,7 +71,7 @@ entries:
     name: weaviate
     type: application
     urls:
-    - https://weaviate.github.io/weaviate-helm/weaviate-16.2.0.tgz
+    - https://cog-weaviate.github.io/weaviate-helm/weaviate-16.2.0.tgz
     version: 16.2.0
   - apiVersion: v2
     appVersion: 1.18.0
@@ -83,8 +83,20 @@ entries:
     name: weaviate
     type: application
     urls:
-    - https://weaviate.github.io/weaviate-helm/weaviate-16.1.0.tgz
+    - https://cog-weaviate.github.io/weaviate-helm/weaviate-16.1.0.tgz
     version: 16.1.0
+  - apiVersion: v2
+    appVersion: 1.18.0
+    created: "2023-10-30T09:29:53.817577+01:00"
+    description: A Helm Chart to run Weaviate with all dependencies
+    digest: 46a1ccf19eaf016df7de57b87996f7dcf3ac3c9e0c68e588cff7001b83c39b20
+    home: https://github.com/weaviate/weaviate
+    icon: https://raw.githubusercontent.com/weaviate/weaviate/19de0956c69b66c5552447e84d016f4fe29d12c9/docs/assets/weaviate-logo.png
+    name: weaviate
+    type: application
+    urls:
+    - https://cog-weaviate.github.io/weaviate-helm/weaviate-16.1.0-cog.tgz
+    version: 16.1.0-cog
   - apiVersion: v2
     appVersion: 1.18.0
     created: "2023-03-07T15:07:44.924697558Z"
@@ -95,7 +107,7 @@ entries:
     name: weaviate
     type: application
     urls:
-    - https://weaviate.github.io/weaviate-helm/weaviate-16.0.0.tgz
+    - https://cog-weaviate.github.io/weaviate-helm/weaviate-16.0.0.tgz
     version: 16.0.0
   - apiVersion: v2
     appVersion: 1.15.0
@@ -107,7 +119,7 @@ entries:
     name: weaviate
     type: application
     urls:
-    - https://weaviate.github.io/weaviate-helm/weaviate-15.5.0.tgz
+    - https://cog-weaviate.github.io/weaviate-helm/weaviate-15.5.0.tgz
     version: 15.5.0
   - apiVersion: v2
     appVersion: 1.15.0
@@ -119,7 +131,7 @@ entries:
     name: weaviate
     type: application
     urls:
-    - https://weaviate.github.io/weaviate-helm/weaviate-15.4.0.tgz
+    - https://cog-weaviate.github.io/weaviate-helm/weaviate-15.4.0.tgz
     version: 15.4.0
   - apiVersion: v2
     appVersion: 1.15.0
@@ -131,7 +143,7 @@ entries:
     name: weaviate
     type: application
     urls:
-    - https://weaviate.github.io/weaviate-helm/weaviate-15.3.1.tgz
+    - https://cog-weaviate.github.io/weaviate-helm/weaviate-15.3.1.tgz
     version: 15.3.1
   - apiVersion: v2
     appVersion: 1.15.0
@@ -143,7 +155,7 @@ entries:
     name: weaviate
     type: application
     urls:
-    - https://weaviate.github.io/weaviate-helm/weaviate-15.3.0.tgz
+    - https://cog-weaviate.github.io/weaviate-helm/weaviate-15.3.0.tgz
     version: 15.3.0
   - apiVersion: v2
     appVersion: 1.15.0
@@ -155,7 +167,7 @@ entries:
     name: weaviate
     type: application
     urls:
-    - https://weaviate.github.io/weaviate-helm/weaviate-15.2.0.tgz
+    - https://cog-weaviate.github.io/weaviate-helm/weaviate-15.2.0.tgz
     version: 15.2.0
   - apiVersion: v2
     appVersion: 1.15.0
@@ -167,7 +179,7 @@ entries:
     name: weaviate
     type: application
     urls:
-    - https://weaviate.github.io/weaviate-helm/weaviate-15.1.0.tgz
+    - https://cog-weaviate.github.io/weaviate-helm/weaviate-15.1.0.tgz
     version: 15.1.0
   - apiVersion: v2
     appVersion: 1.15.0
@@ -179,7 +191,7 @@ entries:
     name: weaviate
     type: application
     urls:
-    - https://weaviate.github.io/weaviate-helm/weaviate-15.0.0.tgz
+    - https://cog-weaviate.github.io/weaviate-helm/weaviate-15.0.0.tgz
     version: 15.0.0
   - apiVersion: v2
     appVersion: 1.14.0
@@ -191,7 +203,7 @@ entries:
     name: weaviate
     type: application
     urls:
-    - https://weaviate.github.io/weaviate-helm/weaviate-15.0.0-alpha.2.tgz
+    - https://cog-weaviate.github.io/weaviate-helm/weaviate-15.0.0-alpha.2.tgz
     version: 15.0.0-alpha.2
   - apiVersion: v2
     appVersion: 1.14.0
@@ -203,7 +215,7 @@ entries:
     name: weaviate
     type: application
     urls:
-    - https://weaviate.github.io/weaviate-helm/weaviate-15.0.0-alpha.1.tgz
+    - https://cog-weaviate.github.io/weaviate-helm/weaviate-15.0.0-alpha.1.tgz
     version: 15.0.0-alpha.1
   - apiVersion: v2
     appVersion: 1.14.1
@@ -215,6 +227,6 @@ entries:
     name: weaviate
     type: application
     urls:
-    - https://weaviate.github.io/weaviate-helm/weaviate-14.4.0.tgz
+    - https://cog-weaviate.github.io/weaviate-helm/weaviate-14.4.0.tgz
     version: 14.4.0
-generated: "2023-09-11T13:59:38.427066517Z"
+generated: "2023-10-30T09:29:53.815802+01:00"
